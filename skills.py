@@ -32,9 +32,10 @@ def all_odd(number_list):
 
     """
 
+    #iterate over the list, adding only odd numbers to odd_list
+    odd_list = [item for item in number_list if item % 2 != 0]
 
-
-    return ['the wrong thing']
+    return odd_list
 
 
 def all_even(number_list):
