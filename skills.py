@@ -32,10 +32,8 @@ def all_odd(number_list):
 
     """
 
-    #iterate over the list, adding only odd numbers to odd_list
-    odd_list = [item for item in number_list if item % 2 != 0]
-
-    return odd_list
+    #iterate over the list, adding only odd numbers to the returned list
+    return [item for item in number_list if item % 2 != 0]
 
 
 def all_even(number_list):
@@ -49,10 +47,8 @@ def all_even(number_list):
 
     """
 
-    #iterate over the list, adding only even numbers to even_list
-    even_list = [item for item in number_list if item % 2 == 0]
-
-    return even_list
+    #iterate over the list, adding only even numbers to the returned list
+    return [item for item in number_list if item % 2 == 0]
 
 
 def every_other_item(my_list):
@@ -66,6 +62,8 @@ def every_other_item(my_list):
        ['you', 'are', 'good', 'at', 'coding']
 
     """
+
+
 
     return ['the wrong thing']
 
