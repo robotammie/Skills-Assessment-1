@@ -16,7 +16,9 @@ def print_list(my_list):
 
     """
 
-    print "the wrong thing"
+    # iterate over the list, printing each item
+    for item in my_list:
+        print item
 
 
 def all_odd(number_list):
@@ -29,6 +31,8 @@ def all_odd(number_list):
         []
 
     """
+
+
 
     return ['the wrong thing']
 
