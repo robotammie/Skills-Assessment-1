@@ -49,7 +49,10 @@ def all_even(number_list):
 
     """
 
-    return ['the wrong thing']
+    #iterate over the list, adding only even numbers to even_list
+    even_list = [item for item in number_list if item % 2 == 0]
+
+    return even_list
 
 
 def every_other_item(my_list):
