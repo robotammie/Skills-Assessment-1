@@ -63,9 +63,8 @@ def every_other_item(my_list):
 
     """
 
+    return my_list[::2]
 
-
-    return ['the wrong thing']
 
 def print_indexes(my_list):
     """Print the index of each item in the input_list, followed by the item itself.
