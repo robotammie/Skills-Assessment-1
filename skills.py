@@ -384,22 +384,29 @@ def reverse_list(my_list):
 
 
 def reverse_list_in_place(my_list):
+    #NOTE: the test for this function originally used the reverse
+    # function from above, and not the reverse_in_place function here.
     """Return the inputted list reversed--WITHOUT creating a new list.
        This will involve moving the items in my_list to different positions
        in the same list.
 
        Do not use the python methed reverse()/reversed()
 
-        >>> reverse_list([1, 2, 3])
+        >>> reverse_list_in_place([1, 2, 3])
         [3, 2, 1]
 
-        >>> reverse_list(["cookies", "love", "I"])
+        >>> reverse_list_in_place(["cookies", "love", "I"])
         ['I', 'love', 'cookies']
 
 
     """
 
-    return []
+    for i in range(len(my_list) / 2):
+        temp = my_list[i]
+        my_list[i] = my_list[-(i + 1)]
+        my_list[-(i + 1)] = temp
+
+    return my_list
 
 
 def duplicates(my_list):
@@ -415,7 +422,11 @@ def duplicates(my_list):
 
     """
 
-    return []
+    for i in range(len(my_list)):
+        if my_list[i] in mylist[i:] and my_list[i] not in [my_list[:i-1]]:
+            newlist += my_list[i]
+
+    return [item for item in my_list if item in ]
 
 
 def find_letter_indices(list_of_words, letter):
