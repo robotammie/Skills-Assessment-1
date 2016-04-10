@@ -116,7 +116,7 @@ def n_long_words(word_list, n):
     ['apples', 'bananas']
     """
 
-    return ['the wrong thing']
+    return [word for word in word_list if len(word) > n]
 
 
 def smallest_int(number_list):
