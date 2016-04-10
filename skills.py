@@ -222,7 +222,12 @@ def sum_numbers(number_list):
 
     """
 
-    return None
+    # These are some numbers!
+    added = 0
+    for num in number_list:
+        added = added + num
+
+    return added
 
 
 def mult_numbers(number_list):
