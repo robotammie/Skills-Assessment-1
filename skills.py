@@ -317,7 +317,21 @@ def join_strings_with_comma(list_of_words):
 
     """
 
-    return ""
+    # instructions for an empty list
+    if len(list_of_words) <= 0:
+        return ""
+
+    composite = list_of_words[0]
+
+    # instructions for a list with only one string in it
+    if len(list_of_words) == 1:
+        return composite
+
+    # instructions for strings of all other lengths
+    for word in list_of_words[1:]:
+        composite = composite + ", " + word
+
+    return composite
 
 
 def foods_in_common(foods1, foods2):
