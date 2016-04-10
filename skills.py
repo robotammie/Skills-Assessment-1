@@ -372,12 +372,20 @@ def reverse_list(my_list):
 
     """
 
-    return []
+    new_list = []
+
+    if len(my_list) <= 0:
+        return new_list
+
+    for item in my_list:
+        new_list = [item] + new_list
+
+    return new_list
 
 
 def reverse_list_in_place(my_list):
     """Return the inputted list reversed--WITHOUT creating a new list.
-       This will involve moving the items in my_list to different positions 
+       This will involve moving the items in my_list to different positions
        in the same list.
 
        Do not use the python methed reverse()/reversed()
