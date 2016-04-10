@@ -448,13 +448,24 @@ def find_letter_indices(list_of_words, letter):
 
     """
 
-    return []
+    indices = []
+
+    for word in list_of_words:
+        if letter not in word:
+            indices += [None]
+        for i in range(len(word)):
+            if word[i] == letter:
+                indices += [i]
+                break
+
+    return indices
+
 
 def largest_n_items(input_list, n):
-    """Given a list of integers along with an integer n, return a 
-    list of the largest n numbers in the input list in ascending order. 
+    """Given a list of integers along with an integer n, return a
+    list of the largest n numbers in the input list in ascending order.
 
-    You can assume that n will be less than the length of the list. 
+    You can assume that n will be less than the length of the list.
 
     For example:
 
