@@ -143,7 +143,7 @@ def smallest_int(number_list):
 
     small = number_list[0]
 
-    for num in number_list[:]:
+    for num in number_list:
         if num < small:
             small = num
 
@@ -167,8 +167,16 @@ def largest_int(number_list):
         True
 
     """
+    if len(number_list) <= 0:
+        return None
 
-    return 0
+    big = number_list[0]
+
+    for num in number_list:
+        if num > big:
+            big = num
+
+    return big
 
 
 def halvesies(number_list):
