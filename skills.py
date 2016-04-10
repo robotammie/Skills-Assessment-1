@@ -63,6 +63,7 @@ def every_other_item(my_list):
 
     """
 
+    #return a slice of the input list, from the first item to the last, counting every second item
     return my_list[::2]
 
 
@@ -86,7 +87,9 @@ def print_indexes(my_list):
 
     """
 
-    print "Nothing at all"
+    # comment
+    for i in range(len(my_list)):
+        print i, my_list[i]
 
 
 def long_words(word_list):
