@@ -276,8 +276,11 @@ def join_strings(word_list):
         ''
 
     """
+    composite = ""
+    for word in word_list:
+        composite = composite + word
 
-    return "Not the right thing"
+    return composite
 
 
 def average(number_list):
