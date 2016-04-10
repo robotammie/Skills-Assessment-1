@@ -249,7 +249,16 @@ def mult_numbers(number_list):
 
     """
 
-    return None
+    if len(number_list) <= 0:
+        return 1
+
+    product = 1
+    for num in number_list:
+        product = product * num
+        if product == 0:
+            break
+
+    return product
 
 
 def join_strings(word_list):
