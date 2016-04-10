@@ -293,7 +293,14 @@ def average(number_list):
     this raises an error when given an empty list.
     """
 
-    return 0
+    total = 0
+
+    for num in number_list:
+        total = total + num
+
+    average = float(total) / len(number_list)
+
+    return average
 
 
 def join_strings_with_comma(list_of_words):
