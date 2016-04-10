@@ -192,7 +192,7 @@ def halvesies(number_list):
 
     """
 
-    return []
+    return [float(num) / 2 for num in number_list]
 
 
 def word_lengths(word_list):
