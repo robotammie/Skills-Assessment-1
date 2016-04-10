@@ -87,7 +87,7 @@ def print_indexes(my_list):
 
     """
 
-    # comment
+    # iterate over the list of indexes, printing each index and what it corresponds to in input list
     for i in range(len(my_list)):
         print i, my_list[i]
 
@@ -103,7 +103,7 @@ def long_words(word_list):
 
     """
 
-    return ['the wrong thing']
+    return [word for word in word_list if len(word) > 4]
 
 
 def n_long_words(word_list, n):
