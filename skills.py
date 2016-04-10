@@ -203,7 +203,7 @@ def word_lengths(word_list):
 
     """
 
-    return []
+    return [len(word) for word in word_list]
 
 
 def sum_numbers(number_list):
